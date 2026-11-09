@@ -7,9 +7,8 @@ document.querySelectorAll('[data-slideshow]').forEach((slideshow) => {
   const toggle = panel.querySelector('.slideshow-toggle');
   const dots = Array.from(panel.querySelectorAll('[data-slide]'));
   const status = panel.querySelector('[data-slide-status]');
-  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   let current = 0;
-  let paused = motionPreference.matches;
+  let paused = false;
   let inView = !('IntersectionObserver' in window);
   let timer;
   let request = 0;
@@ -29,10 +28,6 @@ document.querySelectorAll('[data-slideshow]').forEach((slideshow) => {
   async function showSlide(index, manual = false) {
     const thisRequest = ++request;
     window.clearTimeout(timer);
-    if (manual) {
-      paused = true;
-      updateToggle();
-    }
 
     const next = slides[index];
     next.loading = 'eager';
@@ -69,17 +64,12 @@ document.querySelectorAll('[data-slideshow]').forEach((slideshow) => {
 
   toggle.addEventListener('click', () => {
     paused = !paused;
+    if (paused) request += 1;
     updateToggle();
     schedule();
   });
 
   document.addEventListener('visibilitychange', schedule);
-  motionPreference.addEventListener('change', () => {
-    if (motionPreference.matches) paused = true;
-    updateToggle();
-    schedule();
-  });
-
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(([entry]) => {
       inView = entry.intersectionRatio >= 0.15;
