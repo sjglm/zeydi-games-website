@@ -100,7 +100,6 @@ footer a:hover{color:#e8e9de}
 .story-stage::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#0a0d0bd6,#0a0d0bbd 35%,#0a0d0bbd 65%,#0a0d0bd6);pointer-events:none}
 .story-content{position:relative;z-index:2;max-width:860px;margin:0 auto;padding:104px 32px 100px;text-align:center;text-shadow:0 2px 24px #0005}
 .story-intro h1{font-family:Manrope,Arial,sans-serif;font-size:clamp(72px,9.5vw,144px);font-weight:500;line-height:1.04;letter-spacing:-.075em}
-.story-intro em{color:#d9e7a9}
 .story-intro>p{max-width:620px;margin:32px auto 0;font-size:clamp(21px,2vw,27px);line-height:1.65;letter-spacing:-.025em;text-wrap:pretty}
 .story-body{display:grid;gap:76px;margin-top:96px}
 .story-chapter h2{font-family:Manrope,Arial,sans-serif;font-size:clamp(28px,3vw,40px);font-weight:500;line-height:1.2;letter-spacing:-.045em;text-wrap:balance}
