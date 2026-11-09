@@ -1,0 +1,40 @@
+# Local configuration, credentials and development tools
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+.npmrc
+.netrc
+credentials*
+secrets*
+.codex/
+.openai/
+.claude/
+.idea/
+.vscode/
+AGENTS.md
+AGENTS.local.md
+*.local.*
+
+# Dependencies, generated files and local backups
+node_modules/
+__pycache__/
+*.pyc
+dist/
+build/
+coverage/
+logs/
+*.log
+*.tmp
+*.bak
+*.zip
+*.7z
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

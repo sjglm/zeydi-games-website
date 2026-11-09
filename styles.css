@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap');
+:root{color-scheme:dark;--paper:#e8e9de;--ink:#141715}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid currentColor;outline-offset:8px}
+::selection{background:#d6e79b;color:#141715}
+.skip{position:fixed;top:-100px;left:20px;z-index:20;padding:16px;background:var(--paper);color:var(--ink)}
+.skip:focus{top:12px}
+header{height:88px;padding:0 4.5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff1c;background:var(--ink);position:relative;z-index:5}
+.studio{font-size:20px;font-weight:650;letter-spacing:-.8px}
+nav{display:flex;gap:40px;font-size:14px}
+nav span{margin-left:16px;color:#aeb5a1}
+nav a:hover{color:#cfe09c}
+h1,h2,p{margin:0}
+em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.065em}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.games{margin:0 16px}
+.game{min-height:740px;height:92svh;max-height:1120px;position:relative;overflow:hidden;margin-bottom:16px;padding:7% 5.4% 32px;isolation:isolate}
+.game-content{position:relative;z-index:2;max-width:770px}
+.game h2{font-family:Manrope,Arial,sans-serif;font-size:clamp(70px,9.7vw,162px);font-weight:500;line-height:.98;letter-spacing:-.075em}
+.game-line{font-size:clamp(20px,2.1vw,30px);font-weight:400;line-height:1.5;letter-spacing:-.025em;max-width:560px;margin-top:32px;text-wrap:pretty}
+.description{font-size:16px;line-height:1.8;max-width:480px;margin-top:20px;opacity:.8;text-wrap:pretty}
+.panel-foot{position:absolute;bottom:30px;left:5.4%;right:5.4%;display:flex;align-items:center;justify-content:flex-end;z-index:3;border-top:1px solid #ffffff25;padding-top:19px;font-size:12px}
+.panel-foot a{font-size:26px;padding:0 10px;transition:transform .2s}
+.panel-foot a:hover{transform:translateY(4px)}
+.scene{position:absolute;inset:0;z-index:-1;overflow:hidden}
+.ossuary{background:#25241f;color:#e7dfc8}
+.ossuary .scene{background:radial-gradient(ellipse at 78% 55%,#b9a37233,transparent 55%),linear-gradient(90deg,#23231f 15%,transparent)}
+.arch{position:absolute;border:1px solid #cbb58a2c;border-bottom:0;border-radius:50% 50% 0 0;right:9%;bottom:0;width:35%;height:88%;box-shadow:0 0 0 24px #b9a37206,0 0 0 25px #b9a37216,inset 0 0 100px #0d100d70}
+.arch-two{transform:scale(.74);transform-origin:bottom}
+.arch-three{transform:scale(.49);transform-origin:bottom}
+.light{position:absolute;right:24%;width:5%;top:28%;height:72%;background:linear-gradient(#e7d5a926,transparent);filter:blur(23px);transform:rotate(15deg)}
+.tide{background:#122e34;color:#d9e7df}
+.tide .scene{background:radial-gradient(ellipse at 80% 35%,#5c989133,transparent 50%),linear-gradient(110deg,#10272d,transparent)}
+.subtitle{display:block;font-family:Georgia,serif;font-size:.7em;font-style:italic;font-weight:400;line-height:1.25;letter-spacing:-.06em}
+.moon{width:23vw;height:23vw;border-radius:50%;position:absolute;right:13%;top:17%;background:linear-gradient(120deg,#93b7a750,#3b676540 65%,transparent);box-shadow:0 0 90px #80b1a217}
+.sea{position:absolute;bottom:-20%;left:-20%;width:160%;height:52%;background:#173f45;border-radius:45% 45% 0 0;transform:rotate(-12deg);box-shadow:0 -1px #a5c9b825}
+.sea-front{bottom:-30%;background:#102a31;transform:rotate(9deg)}
+.drone{background:#252d26;color:#e0e8b9}
+.drone .scene{background:linear-gradient(90deg,#242d27 22%,transparent),radial-gradient(ellipse at 80% 45%,#cbd48417,transparent 65%)}
+.radar{width:52vw;height:52vw;position:absolute;right:-7%;top:0;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0,transparent calc(20% - 1px),#c6da8830 20%,transparent calc(20% + 1px));border:1px solid #c6da8828}
+.scan{position:absolute;right:19%;top:15%;height:65%;width:1px;background:#d7e8a350;transform:rotate(37deg)}
+.target{position:absolute;width:52px;height:52px;border:1px solid #d9e7a95c;right:23%;top:35%;transform:rotate(45deg)}
+.target:after{content:'';position:absolute;inset:20px;background:#d9e7a9}
+.target-two{right:10%;top:57%;transform:rotate(45deg) scale(.6)}
+.ground{position:absolute;bottom:-22%;left:40%;width:90%;height:55%;background:repeating-linear-gradient(0deg,transparent 0 54px,#adbb7e1a 55px 56px),repeating-linear-gradient(90deg,transparent 0 74px,#adbb7e1a 75px 76px);transform:perspective(350px) rotateX(55deg)}
+.game.talk{display:flex;align-items:flex-end;background:#201a16;color:#fff4e6;height:auto;min-height:max(760px,92svh);max-height:none;padding:80px 5.4% 116px}
+.promo-art{position:absolute;inset:0;z-index:0;background:#2b1d15;overflow:hidden;pointer-events:none}
+.promo-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:62% center}
+.promo-art::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#100d0ae6 0%,#100d0ab3 36%,#100d0a33 70%,#100d0a0d 100%),linear-gradient(0deg,#100d0ad9 0%,transparent 65%)}
+.talk-details{position:relative;z-index:1;width:100%;max-width:740px;text-shadow:0 2px 24px #0005}
+.talk h2{font-size:clamp(64px,7.4vw,122px);line-height:1.03}
+.talk-copy{padding-top:0}
+.talk .game-line{font-size:clamp(20px,1.7vw,27px);max-width:560px;margin-top:28px}
+.talk .description{color:#e4d6c5;opacity:1}
+.steam-link{display:inline-flex;align-items:center;justify-content:space-between;gap:36px;min-height:56px;margin-top:28px;padding:16px 24px;border:1px solid #efb866;background:#efb866;color:#241a11;font-size:16px;font-weight:600;text-shadow:none;transition:background .2s,border-color .2s}
+.steam-link:hover{background:#f7c987;border-color:#f7c987}
+.steam-link>span[aria-hidden]{font-size:22px;line-height:1}
+.talk .panel-foot{border-color:#f2e5d326}
+.kings{background:#42292a;color:#efcfaa}
+.kings .scene{background:radial-gradient(ellipse at 78% 45%,#d3926926,transparent 60%)}
+.table-ring{width:35vw;height:44vw;position:absolute;right:8%;top:10%;border:1px solid #e1b98040;border-radius:50% 50% 4px 4px;transform:rotate(18deg)}
+.ring-two{transform:rotate(18deg) scale(.84)}
+.ring-three{transform:rotate(18deg) scale(.68)}
+.table-plane{position:absolute;bottom:-28%;right:-10%;width:80%;height:55%;border-radius:50%;background:linear-gradient(#a66e4925,#2d1b23);border:1px solid #e1b98030;transform:rotate(-16deg)}
+.about{padding:80px 6%}
+.about h2{font-family:Manrope,Arial,sans-serif;font-size:clamp(36px,4vw,56px);line-height:1.1;font-weight:500;letter-spacing:-.065em}
+.about-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:45px}
+.about p{max-width:490px;font-size:17px;line-height:1.8;color:#aeb6a8}
+.text-link{font-size:16px;border-bottom:1px solid #707b62;padding-bottom:12px;white-space:nowrap}
+.text-link span{margin-left:40px}
+footer{border-top:1px solid #ffffff20;display:flex;justify-content:space-between;padding:30px 6%;font-size:12px;color:#99a18f}
+footer a:hover{color:#e8e9de}
+@media(min-width:1600px){.game-content{max-width:950px}
+}
+@media(max-width:760px){header{height:74px;padding:0 6%}
+.studio{font-size:18px}
+nav{gap:22px;font-size:12px}
+nav span{display:none}
+.games{margin:0 8px}
+.game{padding:65px 7% 28px;min-height:700px;height:90svh;margin-bottom:8px}
+.game h2{font-size:clamp(65px,13vw,100px)}
+.game .game-line{font-size:22px;max-width:440px;margin-top:28px}
+.panel-foot{left:7%;right:7%;bottom:25px}
+.scene{opacity:.65}
+.arch{width:65%;right:-8%;height:65%}
+.moon{width:55vw;height:55vw;right:-8%;top:43%}
+.radar{width:95vw;height:95vw;top:36%;right:-33%}
+.target{top:68%;right:16%}
+.target-two{top:81%;right:40%}
+.game.talk{min-height:max(820px,100svh);padding:240px 7% 108px}
+.promo-art img{object-position:64% center}
+.promo-art::after{background:linear-gradient(0deg,#100d0af5 0%,#100d0adb 44%,#100d0a60 77%,#100d0a1a 100%)}
+.talk h2{font-size:clamp(44px,9.6vw,72px)}
+.game.talk .game-line{font-size:22px;margin-top:24px}
+.steam-link{width:100%;max-width:360px}
+.table-ring{width:68vw;height:80vw;top:42%;right:-10%}
+.about{padding:85px 7% 70px}
+.about-bottom{display:block;margin-top:30px}
+.about p{font-size:15px}
+.text-link{display:inline-block;margin-top:35px}
+footer{padding:25px 7%;gap:24px;flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+*{transition:none!important}
+}
