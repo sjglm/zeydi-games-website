@@ -34,6 +34,7 @@ em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.065em}
 .arch-three{transform:scale(.49);transform-origin:bottom}
 .light{position:absolute;right:24%;width:5%;top:28%;height:72%;background:linear-gradient(#e7d5a926,transparent);filter:blur(23px);transform:rotate(15deg)}
 .tide{background:#10151b;color:#e5e9e7}
+.game.tide{height:auto;min-height:max(740px,92svh);max-height:none;padding-bottom:116px}
 .tide .promo-art img{object-position:center}
 .tide .promo-art::after{background:linear-gradient(90deg,#080d13eb 0%,#080d13bd 42%,#080d1326 78%),linear-gradient(0deg,#080d1399,transparent 60%)}
 .tide .game-content{text-shadow:0 2px 24px #0008}
@@ -117,6 +118,7 @@ footer a:hover{color:#e8e9de}
 nav{gap:22px;font-size:12px}
 .games{margin:0 8px}
 .game{padding:65px 7% 28px;min-height:700px;height:90svh;margin-bottom:8px}
+.game.tide{min-height:max(700px,90svh)}
 .game h2{font-size:clamp(65px,13vw,100px)}
 .game .game-line{font-size:22px;max-width:440px;margin-top:28px}
 .panel-foot{left:7%;right:7%;bottom:25px}
