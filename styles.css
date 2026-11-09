@@ -5,6 +5,7 @@ html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{margin:0;background:var(--ink);color:var(--paper);font-family:'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 a:focus-visible{outline:2px solid currentColor;outline-offset:8px}
+button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 ::selection{background:#d6e79b;color:#141715}
 .skip{position:fixed;top:-100px;left:20px;z-index:20;padding:16px;background:var(--paper);color:var(--ink)}
 .skip:focus{top:12px}
@@ -36,6 +37,17 @@ em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.065em}
 .tide .promo-art img{object-position:center}
 .tide .promo-art::after{background:linear-gradient(90deg,#080d13eb 0%,#080d13bd 42%,#080d1326 78%),linear-gradient(0deg,#080d1399,transparent 60%)}
 .tide .game-content{text-shadow:0 2px 24px #0008}
+.game-slideshow .game-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.game-slideshow .game-slide.is-active{opacity:1}
+.slideshow-controls{display:flex;align-items:center;gap:12px;margin-right:auto}
+.slideshow-controls[hidden]{display:none}
+.slideshow-dots{display:flex;align-items:center}
+.slide-dot{position:relative;width:32px;height:40px;padding:0;border:0;background:transparent;color:inherit;cursor:pointer}
+.slide-dot::after{content:'';position:absolute;top:50%;left:50%;width:6px;height:6px;border-radius:99px;background:currentColor;opacity:.45;transform:translate(-50%,-50%);transition:width .2s,opacity .2s}
+.slide-dot[aria-pressed="true"]::after{width:20px;opacity:1}
+.slide-dot:hover::after{opacity:1}
+.slideshow-toggle{min-width:68px;min-height:40px;padding:8px 14px;border:1px solid #e5e9e75c;border-radius:99px;background:#080d1366;color:inherit;font:inherit;font-size:12px;cursor:pointer}
+.slideshow-toggle:hover{background:#e5e9e71a;border-color:#e5e9e799}
 .subtitle{display:block;font-family:Georgia,serif;font-size:.7em;font-style:italic;font-weight:400;line-height:1.25;letter-spacing:-.06em}
 .drone{background:#252d26;color:#e0e8b9}
 .drone .scene{background:linear-gradient(90deg,#242d27 22%,transparent),radial-gradient(ellipse at 80% 45%,#cbd48417,transparent 65%)}
@@ -108,6 +120,9 @@ nav{gap:22px;font-size:12px}
 .game h2{font-size:clamp(65px,13vw,100px)}
 .game .game-line{font-size:22px;max-width:440px;margin-top:28px}
 .panel-foot{left:7%;right:7%;bottom:25px}
+.slide-dot{width:24px}
+.slideshow-controls{gap:8px}
+.slideshow-toggle{min-width:60px;padding:8px 10px}
 .scene{opacity:.65}
 .arch{width:65%;right:-8%;height:65%}
 .radar{width:95vw;height:95vw;top:36%;right:-33%}

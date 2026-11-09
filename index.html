@@ -48,15 +48,34 @@
         <div class="panel-foot"><a href="#black-tide" aria-label="Next game: Black Tide Forsaken">↓</a></div>
       </section>
       <section class="game tide" id="black-tide" aria-labelledby="tide-title">
-        <div class="promo-art">
-          <img src="assets/black-tide/church.jpg" width="2560" height="1440" loading="lazy" decoding="async" alt="Black Tide: Forsaken's main menu inside a candlelit stone church.">
+        <div class="promo-art game-slideshow" data-slideshow aria-hidden="true">
+          <img class="game-slide is-active" src="assets/black-tide/environment.jpg" width="2560" height="1440" loading="lazy" decoding="async" alt="">
+          <img class="game-slide" src="assets/black-tide/dining-night.jpg" width="2560" height="1440" loading="lazy" decoding="async" alt="">
+          <img class="game-slide" src="assets/black-tide/cuthberts-isle.jpg" width="2560" height="1440" loading="lazy" decoding="async" alt="">
+          <img class="game-slide" src="assets/black-tide/church-night.jpg" width="2560" height="1440" loading="lazy" decoding="async" alt="">
+          <img class="game-slide" src="assets/black-tide/main-menu-tree.jpg" width="2560" height="1440" loading="lazy" decoding="async" alt="">
+          <img class="game-slide" src="assets/black-tide/moon.jpg" width="2560" height="1440" loading="lazy" decoding="async" alt="">
         </div>
         <div class="game-content">
           <h2 id="tide-title">Black Tide<span class="subtitle">Forsaken</span></h2>
           <p class="game-line">A historical open-world action RPG with dynamic weather, lighting and tides.</p>
           <p class="description">Explore settlements and interiors, manage your inventory and follow quests as the environment changes around you.</p>
         </div>
-        <div class="panel-foot"><a href="#drone-defence" aria-label="Next game: Drone Defence">↓</a></div>
+        <div class="panel-foot">
+          <div class="slideshow-controls" role="group" aria-label="Black Tide screenshot controls" hidden>
+            <div class="slideshow-dots">
+              <button class="slide-dot" type="button" data-slide="0" aria-label="Show woodland screenshot" aria-pressed="true"></button>
+              <button class="slide-dot" type="button" data-slide="1" aria-label="Show dining hall at night" aria-pressed="false"></button>
+              <button class="slide-dot" type="button" data-slide="2" aria-label="Show Cuthbert's Isle at sunrise" aria-pressed="false"></button>
+              <button class="slide-dot" type="button" data-slide="3" aria-label="Show church interior at night" aria-pressed="false"></button>
+              <button class="slide-dot" type="button" data-slide="4" aria-label="Show castle and tree at sunset" aria-pressed="false"></button>
+              <button class="slide-dot" type="button" data-slide="5" aria-label="Show moonlit church exterior" aria-pressed="false"></button>
+            </div>
+            <button class="slideshow-toggle" type="button" aria-label="Pause Black Tide slideshow">Pause</button>
+          </div>
+          <span class="sr-only" data-slide-status aria-live="polite" aria-atomic="true"></span>
+          <a href="#drone-defence" aria-label="Next game: Drone Defence">↓</a>
+        </div>
       </section>
       <section class="game drone" id="drone-defence" aria-labelledby="drone-title">
         <div class="scene" aria-hidden="true">
