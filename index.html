@@ -14,13 +14,27 @@
   <header>
     <a class="studio" href="#" aria-label="ZeYDi Games home">ZeYDi Games</a>
     <nav aria-label="Main navigation">
-      <a href="#games">The games <span aria-hidden="true">↘</span></a>
-      <a href="#studio">The studio <span aria-hidden="true">↗</span></a>
+      <a href="#games" aria-current="page">The games <span aria-hidden="true">↘</span></a>
+      <a href="story.html">Our story <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
   <main>
     <h1 class="sr-only">Games by ZeYDi Games</h1>
     <div id="games" class="games">
+      <section class="game talk" id="talk" aria-labelledby="talk-title">
+        <div class="promo-art">
+          <img src="assets/sytyct/library-hero.png" width="3840" height="1240" loading="eager" fetchpriority="high" decoding="async" alt="Players gathered around a candlelit table in a wooden tavern in So You Think You Can Talk?">
+        </div>
+        <div class="talk-details">
+          <h2 id="talk-title">So You Think<br>You Can Talk?</h2>
+          <div class="talk-copy">
+            <p class="game-line">A 2–8 player online party game where you describe words and guess other players’ clues against the clock.</p>
+            <p class="description">Play together through Steam lobbies with voice chat, word selection, scoring and timed rounds.</p>
+            <a class="steam-link" href="https://store.steampowered.com/app/5370920/So_You_Think_You_Can_Talk/" target="_blank" rel="noopener noreferrer">View on Steam <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+        <div class="panel-foot"><a href="#ossuary" aria-label="Next game: Ossuary">↓</a></div>
+      </section>
       <section class="game ossuary" id="ossuary" aria-labelledby="ossuary-title">
         <div class="scene" aria-hidden="true">
           <div class="arch arch-one"></div><div class="arch arch-two"></div>
@@ -54,20 +68,6 @@
           <p class="game-line">A VR survival game where you fight increasingly dangerous drones in a military base.</p>
           <p class="description">Aim with both hands, reload manually and carry equipment on your body, with upgrades and a run-based economy across campaign and endless modes.</p>
         </div>
-        <div class="panel-foot"><a href="#talk" aria-label="Next game: So You Think You Can Talk?">↓</a></div>
-      </section>
-      <section class="game talk" id="talk" aria-labelledby="talk-title">
-        <div class="promo-art">
-          <img src="assets/sytyct/library-hero.png" width="3840" height="1240" loading="lazy" decoding="async" alt="Players gathered around a candlelit table in a wooden tavern in So You Think You Can Talk?">
-        </div>
-        <div class="talk-details">
-          <h2 id="talk-title">So You Think<br>You Can Talk?</h2>
-          <div class="talk-copy">
-            <p class="game-line">A 2–8 player online party game where you describe words and guess other players’ clues against the clock.</p>
-            <p class="description">Play together through Steam lobbies with voice chat, word selection, scoring and timed rounds.</p>
-            <a class="steam-link" href="https://store.steampowered.com/app/5370920/So_You_Think_You_Can_Talk/" target="_blank" rel="noopener noreferrer">View on Steam <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
-          </div>
-        </div>
         <div class="panel-foot"><a href="#kings-table" aria-label="Next game: King's Table">↓</a></div>
       </section>
       <section class="game kings" id="kings-table" aria-labelledby="kings-title">
@@ -87,7 +87,7 @@
       <h2 id="studio-title">The studio</h2>
       <div class="about-bottom">
         <p>ZeYDi Games is an independent game development studio.</p>
-        <a class="text-link" href="#games">View the games <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="story.html">Read our story <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>

@@ -13,6 +13,7 @@ header{height:88px;padding:0 4.5%;display:flex;align-items:center;justify-conten
 nav{display:flex;gap:40px;font-size:14px}
 nav span{margin-left:16px;color:#aeb5a1}
 nav a:hover{color:#cfe09c}
+nav a[aria-current="page"]{color:#d9e7a9}
 h1,h2,p{margin:0}
 em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.065em}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
@@ -73,6 +74,24 @@ em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.065em}
 .text-link span{margin-left:40px}
 footer{border-top:1px solid #ffffff20;display:flex;justify-content:space-between;padding:30px 6%;font-size:12px;color:#99a18f}
 footer a:hover{color:#e8e9de}
+.story-page{background:var(--paper);color:#252a23}
+.story-page header{color:var(--paper)}
+.story-intro{display:grid;grid-template-columns:1.15fr 1fr;align-items:end;gap:64px;padding:100px 6% 92px}
+.story-intro h1{font-family:Manrope,Arial,sans-serif;font-size:clamp(80px,10vw,170px);font-weight:500;line-height:1.04;letter-spacing:-.075em}
+.story-intro em{color:#66714d}
+.story-intro>p{max-width:490px;font-size:clamp(20px,2vw,28px);line-height:1.6;letter-spacing:-.025em;padding-bottom:8px;text-wrap:pretty}
+.story-art{margin:0 16px;background:#2b1d15;overflow:hidden}
+.story-art img{display:block;width:100%;height:clamp(260px,34vw,580px);object-fit:cover;object-position:center}
+.story-body{padding:72px 6% 40px}
+.story-chapter{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;border-top:1px solid #252a232b;padding:64px 0}
+.story-chapter h2{max-width:390px;font-family:Manrope,Arial,sans-serif;font-size:clamp(30px,3vw,46px);font-weight:500;line-height:1.2;letter-spacing:-.055em;text-wrap:balance}
+.story-prose{max-width:650px;font-size:19px;line-height:1.85;color:#50574b;text-wrap:pretty}
+.story-prose p+p{margin-top:24px}
+.story-prose a{color:#252a23;text-decoration:underline;text-decoration-color:#8c987d;text-underline-offset:4px;text-decoration-thickness:1px}
+.story-prose a:hover{text-decoration-color:currentColor}
+.story-outro{display:flex;justify-content:space-between;align-items:center;gap:40px;padding:88px 6%;background:var(--ink);color:var(--paper)}
+.story-outro h2{font-family:Manrope,Arial,sans-serif;font-size:clamp(48px,6vw,90px);font-weight:500;line-height:1.1;letter-spacing:-.065em}
+.story-page footer{background:var(--ink);color:#99a18f;border-color:#ffffff20}
 @media(min-width:1600px){.game-content{max-width:950px}
 }
 @media(max-width:760px){header{height:74px;padding:0 6%}
@@ -102,6 +121,16 @@ nav span{display:none}
 .about p{font-size:15px}
 .text-link{display:inline-block;margin-top:35px}
 footer{padding:25px 7%;gap:24px;flex-wrap:wrap}
+.story-intro{grid-template-columns:1fr;gap:30px;padding:64px 7% 56px}
+.story-intro h1{font-size:clamp(64px,14vw,100px)}
+.story-intro>p{font-size:21px;padding-bottom:0}
+.story-art{margin:0 8px}
+.story-art img{height:320px;object-position:58% center}
+.story-body{padding:48px 7% 16px}
+.story-chapter{grid-template-columns:1fr;gap:24px;padding:40px 0}
+.story-prose{font-size:17px}
+.story-outro{display:block;padding:64px 7%}
+.story-outro .text-link{margin-top:28px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 *{transition:none!important}
