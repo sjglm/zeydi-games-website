@@ -14,18 +14,26 @@
   <header>
     <a class="studio" href="index.html" aria-label="ZeYDi Games home">ZeYDi Games</a>
     <nav aria-label="Main navigation">
-      <a href="index.html#games">The games <span aria-hidden="true">↘</span></a>
-      <a href="story.html" aria-current="page">Our story <span aria-hidden="true">↗</span></a>
+      <a href="index.html#games">The games</a>
+      <a href="story.html" aria-current="page">Our story</a>
     </nav>
   </header>
-  <main id="story">
+  <main id="story" class="story-stage">
+    <div class="story-collage" aria-hidden="true">
+      <div class="collage-tile collage-talk" data-game="talk">
+        <img src="assets/sytyct/library-hero.png" width="3840" height="1240" fetchpriority="high" decoding="async" alt="">
+      </div>
+      <!-- Replace each placeholder with its game's artwork when available. -->
+      <div class="collage-tile collage-placeholder collage-ossuary" data-game="ossuary"></div>
+      <div class="collage-tile collage-placeholder collage-tide" data-game="black-tide"></div>
+      <div class="collage-tile collage-placeholder collage-drone" data-game="drone-defence"></div>
+      <div class="collage-tile collage-placeholder collage-kings" data-game="kings-table"></div>
+    </div>
+    <div class="story-content">
     <section class="story-intro" aria-labelledby="story-title">
       <h1 id="story-title">Our <em>story.</em></h1>
       <p>ZeYDi Games is an independent studio making games around exploration, hands-on play and shared experiences.</p>
     </section>
-    <div class="story-art">
-      <img src="assets/sytyct/library-hero.png" width="3840" height="1240" decoding="async" alt="The candlelit tavern in So You Think You Can Talk?, with players gathered around a table.">
-    </div>
     <div class="story-body">
       <section class="story-chapter" aria-labelledby="purpose-title">
         <h2 id="purpose-title">Our purpose</h2>
@@ -49,14 +57,14 @@
         </div>
       </section>
     </div>
-    <section class="story-outro" aria-labelledby="story-games-title">
-      <h2 id="story-games-title">Our games</h2>
-      <a class="text-link" href="index.html#games">Explore the games <span aria-hidden="true">↗</span></a>
-    </section>
+    <div class="story-outro">
+      <a class="text-link" href="index.html#games">Explore the games</a>
+    </div>
+    </div>
   </main>
   <footer>
     <span>© <span id="year">2026</span> ZeYDi Games</span>
-    <a href="#story">Back to the top ↑</a>
+    <a href="#story">Back to the top</a>
   </footer>
 </body>
 </html>
